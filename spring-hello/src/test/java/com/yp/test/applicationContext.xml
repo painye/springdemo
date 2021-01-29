@@ -9,21 +9,14 @@
                 http://www.springframework.org/schema/context/spring-context-4.3.xsd">
     <!--bean就像一个对象,工厂要造的对象-->
     <!--读该配置文件创建容器，在创建容器的同时就创建下面的对象-->
-    <bean id="myKFC" class="com.yp.sevice.impl.KFC">
-        <property name="name" value="肯德基"></property> <!--相当于调用了setName("肯德基")方法-->
-        <property name="price" value="30"></property>   <!--相当于调用了setPrice(30)方法-->
-    </bean>
-    <bean id="myChuanHouse" class="com.yp.sevice.impl.ChuanHouse"></bean>
-    <bean id="tom"  class="com.yp.entity.Person"></bean>
-
-    <bean id="myStudent" class="com.yp.entity.Student">
+    <bean id="myStudent" class="com.yp.entity.Student" autowire="byName">
         <property name="name" value="黎明"></property>
         <property name="number" value="1"/>
         <property name="grade" value="3"/>
-        <property name="school" ref="mySchool"/>
+<!--        <property name="school" ref="mySchool"/>-->
     </bean>
 
-    <bean id="mySchool" class="com.yp.entity.School">
+    <bean id="school" class="com.yp.entity.School">
         <property name="name" value="第一中学"/>
         <property name="grade" value="2"/>
         <property name="address" value="汉台区"/>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="myStudent" class="com.yp.anno.demo03.Student" autowire="byType">
+        <property name="name" value="23"/>
+        <property name="age" value="34"/>
+     </bean>
+
+<!--    <bean id="myschool" class="com.yp.anno.demo03.School">-->
+<!--        <property name="name" value="3"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="Highschool" class="com.yp.anno.demo03.HighSchool" parent="myschool">-->
+<!--        <property name="address" value="2"/>-->
+<!--        <property name="grade" value="2"/>-->
+<!--        <property name="name" value="2"/>-->
+<!--    </bean>-->
+
+
+</beans>

@@ -9,8 +9,9 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>untitled</module>
         <module>spring-hello</module>
+        <module>anno</module>
+        <module>spring-aop-aspectj</module>
     </modules>
 
 
